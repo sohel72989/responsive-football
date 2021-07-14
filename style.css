@@ -153,3 +153,20 @@ figcaption a{
  /*---------------
   footer style end
   --------- -------*/
+  /* ------------
+  media queries
+  --------------- */
+           /* ----------------
+           Mobile Device
+           ----------------- */
+           
+  @media only screen and (max-width:668px) {
+      .container,.our-team,.media{
+          width: 100%;
+          grid-template-columns: repeat(1, 1fr);
+      }
+      .banner-title{
+          flex-direction: column;
+          align-items: center;
+      }
+  }
