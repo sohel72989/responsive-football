@@ -28,8 +28,12 @@ body{
    
 }
 .top-banner img:hover{
-    transform: rotate(45deg);
-    transition: transform 1s ease-in;
+    transform: rotate(30deg);
+    transition: transform 0.8s ease-in;
+}
+.top-banner .title:hover{
+    transform: scale(1.1);
+    transition: transform 0.8s ease-in;
 }
 .title{
    padding-bottom: 240;
@@ -41,7 +45,8 @@ body{
 main{
     background-color: white;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding-top: 57px;
 }
 .player-title{
@@ -84,6 +89,34 @@ p{
     width: 300px;
     height: 256px;
     padding: 15px;
+}
+/* -----------------
+Extra item for bonus
+-------------------- */
+.our-team{
+    background-color: whitesmoke;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 15px;
+    overflow: hidden;
+}
+.our-team img:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in;
+}
+figcaption{
+    color:#E02C6D;
+    font-weight: 700;
+}
+figcaption a{
+    color: darkolivegreen;
+    text-decoration: none;
+}
+.section-title{
+    color: #E02C6D;
+    margin: 50px;
+
 }
  /* --------------
  footer style start
